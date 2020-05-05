@@ -784,6 +784,8 @@ header .rec-header {
         list-style: none;
         padding-bottom: 10px;
         padding-top: 10px; }
+        .rec-categories_accordion ul li:last-child {
+          padding-bottom: 0; }
       .rec-categories_accordion ul button {
         border: none;
         outline: none;

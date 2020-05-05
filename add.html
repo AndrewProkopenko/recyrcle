@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить объявление</title>
+
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/vendor.css"> 
+   
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.ico">
+</head>
+<body>
+        
+    <!-- header start  -->
+    <header>
+        <div class="rec-header">
+            <div class="container-fluid p-0">
+                <div class="container">
+                    <div class="rec-header_nav">
+                        <div class="rec-header_nav__logo">
+                            <a href="index.html">Поиск отходов для реализации</a>                       
+                        </div>
+                        <button class="js-open-menu open-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <div class="js-menu-collapse rec-header_nav__collapsed">
+                            <div class="rec-header_nav__collapsed-logo"> 
+                            </div>
+                            <div class="rec-header_nav__collapsed-menu ">
+                                <ul>
+                                    <li>
+                                        <a href="#">Помощь</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Обратная связь</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Реклама</a>
+                                    </li>
+                                    <!-- <li>
+                                        <a href="#"><span>Ликбез</span></a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                            <div class="rec-header_nav__collapsed-tools">
+                                <div class="rec-header_nav__collapsed-tools_entry">
+                                    <a href="sign.html">
+                                        Вход/регистрация
+                                    </a>
+                                </div>
+                                <div class="rec-header_nav__collapsed-tools_add">
+                                    <a href="#">
+                                        Подать объявление
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <button class="js-close-menu close-btn">
+                                    <span></span>
+                                    <span></span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+              
+            </div>
+        </div> 
+    </header>
+    <!-- header end  -->
+ 
+
+    <main>
+       <!-- <div class="container-fluid p-0 h-100"> -->
+            <div class="rec-isle">
+                <div class="rec-isle_block">
+                    <h2>Добавить объявление</h2>
+                    <form name="add" action="#">
+                        <div class="rec-isle_block-form_add">
+                             <!-- name  -->
+                            <div class="item">
+                                <label for="add-name"> Название объявления:</label>
+                                <input name="name" type="text" id="add-name" placeholder="Михайленко Михаил Михайлович – директор" />
+                            </div>
+                            <!-- category -->
+                            <div class="item">
+                                <label for="add-category">Категория:</label>
+                                <input name='cat' type="text" id="add-category" placeholder="Введите категорию" />
+                            </div>
+                            <!-- info -->
+                            <div class="item item-textarea">
+                                <label for="add-info">Информация о объявлении:</label>
+                                <textarea name='descr' type="text"  id="add-info" placeholder="Информация, которая будет указывать на странице о вашей компании" ></textarea>
+                            </div>
+                            <!-- unit , price-->
+                            <div class="item item-dual">
+                                <div class="item item-unit">
+                                    <label for="add-unit"> Единица измерения:</label>
+                                    <select class="js-select-unit" name="unit" id="add-unit">
+                                        <option value="1">
+                                            кг
+                                        </option>
+                                        <option value="2">
+                                            pound
+                                        </option>
+                                        <option value="3">
+                                            metr
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="item item-price-once">
+                                    <label for="add-price-once"> Стоимость за единицу:</label>
+                                    <input name='once' type="text" id="add-price-once" placeholder=" 10 000 руб" />
+                                </div>
+                            </div>
+                            <!-- volume price -->
+                            <div class="item item-dual">
+                                
+                                <div class="item item-volume">
+                                    <label for="add-volume"> Объём:</label>
+                                    <input name="volume" type="text" id="add-volume" placeholder=" 100" />
+                                </div>
+                                <div class="item item-price">
+                                    <label for="add-price"> Расчетная стоимость:</label>
+                                    <input name="price" type="text" id="add-price" placeholder=" 1 000 000 руб" />
+                                </div>
+                            </div>
+                            <!-- file -->
+                            <div class="item item-file">
+                                <label for="add-file">Загрузить фотографию: </label>
+                                <label class="change-photo" for="add-file">Выберите фото </label> 
+                                <input name='photo' type="file" accept="image/*" id="add-file" multiple onchange="loadFile(event)" /> 
+                                 
+                                <div class="item-image">
+                                    <label for="add-file" class="image-cont">
+                                       <span> Добавить фото</span>
+                                    </label> 
+                                </div>
+                            </div>
+                             
+                            <!-- adress  -->
+                            <div class="item">
+                                <label for="add-adress">Физический адрес:</label>
+                                <input name="adress" type="text" id="add-adress" placeholder="Россия, г. Казань, Петербуржская 21/11" />
+                            </div>
+                            <!-- car  -->
+                            <div class="item">
+                                <label for="add-car">  Способ погрузки:</label>
+                                <input name="load" type="text" id="add-car" placeholder="Грузовой автомобиль" />
+                            </div>
+                            <!-- doc  -->
+                            <div class="item">
+                                <label for="add-doc">Правообладающие документы на сырьё:</label>
+                                <input name="doc" type="text" id="add-doc" placeholder=" " />
+                            </div>
+
+                            <!-- btn -->
+                            <div class="btn-form">
+                                <button type="submit">Продолжить</button>
+                            </div>
+                            
+                             
+                        </div> 
+                    </form>  
+                </div> 
+            </div>
+       <!-- </div> -->
+    </main>
+
+     <!-- footer start -->
+     <footer>
+        <div class="rec-footer">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="rec-footer_content">
+                        <span>Коммерческая информация и информация о разработчиках</span> 
+                    </div> 
+                </div>
+            </div>
+        </div> 
+    </footer>
+    <!-- footer end -->
+
+    
+    <script src="assets/js/vendor.min.js"></script>  
+    <script src="assets/js/script.min.js"></script> 
+  
+</body>
+</html>

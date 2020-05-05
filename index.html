@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recyrcle - Круговорот полезного в отходах</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/vendor.css"> 
+   
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.ico">
+</head>
+<body>
+
+    <!-- header start  -->
+    <header>
+        <div class="rec-header">
+            <div class="container-fluid p-0">
+                <div class="container">
+                    <div class="rec-header_nav">
+                        <div class="rec-header_nav__logo">
+                            <a href="index.html">Поиск отходов для реализации</a>                       
+                        </div>
+                        <button class="js-open-menu open-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <div class="js-menu-collapse rec-header_nav__collapsed">
+                            <div class="rec-header_nav__collapsed-logo">
+                                <!-- <a href="index.html">Поиск отходов для реализации</a> -->
+                            </div>
+                            <div class="rec-header_nav__collapsed-menu ">
+                                <ul>
+                                    <li>
+                                        <a href="#">Помощь</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Обратная связь</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Реклама</a>
+                                    </li>
+                                    <!-- <li>
+                                        <a href="#"><span>Ликбез</span></a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                            <div class="rec-header_nav__collapsed-tools">
+                                <div class="rec-header_nav__collapsed-tools_entry">
+                                    <a href="sign.html">
+                                        Вход/регистрация
+                                    </a>
+                                </div>
+                                <div class="rec-header_nav__collapsed-tools_add">
+                                    <a href="add.html">
+                                        Подать объявление
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <button class="js-close-menu close-btn">
+                                    <span></span>
+                                    <span></span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+              
+            </div>
+        </div>
+        
+
+
+    </header>
+    <!-- header end  -->
+
+    <!-- main logo start -->
+    <div class="container">
+        <div class="rec-main-logo">
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="logo">
+                <p class="text-black">Recyrcle</p>
+                <span>Круговорот полезного в отходах</span>
+            </a>                           
+        </div>
+    </div>
+    <!-- main logo end -->
+
+    <!-- search block start -->
+    <div class="container">
+        <div class="rec-search">
+            <form action="#">
+                <div class="rec-search_form">
+                    <div class="shop">
+                        <select name="shop" class="js-select-buy"> 
+                            <option value="buy">покупаю</option>
+                            <option value="sale">продаю</option>
+                        </select>
+                    </div>
+                    
+                    <div class="category">
+                        <select name="category" class="js-select-cat">
+                            <option value="1">Стекло</option>
+                            <option value="2">Бумага</option>
+                            <option value="3">Пластик</option>
+                        </select>
+                    </div>
+                  
+                   <div class="search">
+                      <input name="search" type="search" placeholder="Поиск по объявлениям"/>
+                   </div>
+    
+                    <div class="agreg">
+                        <select name="agreg" class="js-select-agr">
+                            <option value="1">Битое</option>
+                            <option value="2">Целое</option>
+                            <option value="3">Полубитое</option>
+                        </select>
+                    </div>
+                    
+                    <div class="city">
+                        <select name="city" class="js-select-city">
+                            <option value="kazan">Казань</option>
+                            <option value="moscow">Москва</option>
+                            <option value="rostov">Ростов-на-Дону</option>
+                        </select>
+                    </div>
+                    
+                    <div class="search-button"> 
+                        <button type="submit">Найти!</button>
+                    </div>
+
+                   
+                </div>
+                <div class="checkbox-block">
+                    <div class="delivery">
+                         <input type="checkbox" name="delivery" id="delivery-ch">
+                         <label for="delivery-ch">
+                             <span></span>
+                             Есть доставка
+                         </label>
+                    </div>
+                    <div class="photo">
+                        <input type="checkbox" name="photo" id="photo-ch">
+                        <label for="photo-ch">
+                             <span></span>
+                             Только с фото
+                        </label>
+                    </div>
+                 </div>
+            </form>
+        </div>
+    </div>
+    <!-- search block end -->
+
+    <!-- main start -->
+    <main>
+        <div class="container">
+            <div class="row">
+
+                <!-- categories block -->
+                <div class="col-12 col-lg-9"> 
+                    <div class="rec-categories">
+                        <div class="js-accordion-bnt rec-categories_head"> 
+                               <span> все категории </span>
+                        </div>
+                        <div class="rec-categories_list">
+                            <h4>Рекомендации для Вас:</h4>
+                            <div class="row">
+
+                                <!-- item -->
+                                <div class="col-12 col-sm-6 col-xl-3">
+                                    <div class="rec-categories_list__item">
+                                        <a href="product.html">
+                                            <div class="image" style="background-image: url(assets/images/no-photo.png);"></div>
+                                            <div class="title">Отходы металопроката</div>
+                                            <div class="price">
+                                                10 000 000 
+                                                <span>руб</span>
+                                            </div>
+                                            <div class="agreg">Твердое состояние</div>
+                                            <div class="city">Москва</div>
+                                            <div class="weight">100 килограмм</div>
+                                        </a> 
+                                    </div> 
+                                </div>
+                                
+                                <!-- item -->
+                                <div class="col-12 col-sm-6 col-xl-3">
+                                    <div class="rec-categories_list__item">
+                                        <a href="product.html">
+                                            <div class="image" style="background-image: url(assets/images/glass.png);"></div>
+                                            <div class="title">Битое стекло</div>
+                                            <div class="price">
+                                                200 000 
+                                                <span>руб</span>
+                                            </div>
+                                            <div class="agreg">Твердое состояние</div>
+                                            <div class="city">Казань</div>
+                                            <div class="weight">100 000 килограмм</div>
+                                        </a> 
+                                    </div> 
+                                </div>
+                                
+                                <!-- item -->
+                                <div class="col-12 col-sm-6 col-xl-3">
+                                    <div class="rec-categories_list__item">
+                                        <a href="product.html">
+                                            <div class="image" style="background-image: url(assets/images/plastiс.png);"></div>
+                                            <div class="title">Пластмассовые отходы</div>
+                                            <div class="price">
+                                              4000 
+                                                <span>руб за килограмм</span>
+                                            </div>
+                                            <div class="agreg">Твердое состояние</div>
+                                            <div class="city">Казань</div>
+                                            <div class="weight">100 000 килограмм</div>
+                                        </a> 
+                                    </div> 
+                                </div>
+
+                                <!-- item -->
+                                <div class="col-12 col-sm-6 col-xl-3">
+                                    <div class="rec-categories_list__item">
+                                        <a href="product.html">
+                                            <div class="image" style="background-image: url(assets/images/glass.png);"></div>
+                                            <div class="title">Битое стекло</div>
+                                            <div class="price">
+                                                200 000 
+                                                <span>руб</span>
+                                            </div>
+                                            <div class="agreg">Твердое состояние</div>
+                                            <div class="city">Казань</div>
+                                            <div class="weight">100 000 килограмм</div>
+                                        </a> 
+                                    </div> 
+                                </div>
+                                
+                                <!-- item -->
+                                <div class="col-12 col-sm-6 col-xl-3">
+                                    <div class="rec-categories_list__item">
+                                        <a href="product.html">
+                                            <div class="image" style="background-image: url(assets/images/plastiс.png);"></div>
+                                            <div class="title">Пластмассовые отходы</div>
+                                            <div class="price">
+                                              4000 
+                                                <span>руб за килограмм</span>
+                                            </div>
+                                            <div class="agreg">Твердое состояние</div>
+                                            <div class="city">Казань</div>
+                                            <div class="weight">100 000 килограмм</div>
+                                        </a> 
+                                    </div> 
+                                </div>
+
+                                <!-- item -->
+                                <div class="col-12 col-sm-6 col-xl-3">
+                                    <div class="rec-categories_list__item">
+                                        <a href="product.html">
+                                            <div class="image" style="background-image: url(assets/images/glass.png);"></div>
+                                            <div class="title">Битое стекло</div>
+                                            <div class="price">
+                                                200 000 
+                                                <span>руб</span>
+                                            </div>
+                                            <div class="agreg">Твердое состояние</div>
+                                            <div class="city">Казань</div>
+                                            <div class="weight">100 000 килограмм</div>
+                                        </a> 
+                                    </div> 
+                                </div>
+                                
+                                <!-- item -->
+                                <div class="col-12 col-sm-6 col-xl-3">
+                                    <div class="rec-categories_list__item">
+                                        <a href="product.html">
+                                            <div class="image" style="background-image: url(assets/images/plastiс.png);"></div>
+                                            <div class="title">Пластмассовые отходы</div>
+                                            <div class="price">
+                                              4000 
+                                                <span>руб за килограмм</span>
+                                            </div>
+                                            <div class="agreg">Твердое состояние</div>
+                                            <div class="city">Казань</div>
+                                            <div class="weight">100 000 килограмм</div>
+                                        </a> 
+                                    </div> 
+                                </div>
+                                
+                                <!-- item -->
+                                <div class="col-12 col-sm-6 col-xl-3">
+                                    <div class="rec-categories_list__item">
+                                        <a href="product.html">
+                                            <div class="image" style="background-image: url(assets/images/glass.png);"></div>
+                                            <div class="title">Битое стекло</div>
+                                            <div class="price">
+                                                200 000 
+                                                <span>руб</span>
+                                            </div>
+                                            <div class="agreg">Твердое состояние</div>
+                                            <div class="city">Казань</div>
+                                            <div class="weight">100 000 килограмм</div>
+                                        </a> 
+                                    </div> 
+                                </div>
+                                 
+                                
+                            </div>
+                            <div class="rec-categories_list__more">
+                                <div>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <a href="#">Ещё</a>
+                            </div>
+                           
+                        </div>
+                        <div class="js-cat-accordion rec-categories_accordion">
+                             <ul>
+                                <button> Отходы сельского, лесного хозяйства, рыбоводства и рыболовства </button>
+                                 
+                                 <li>
+                                     <ul>
+                                        <button>Отходы сельского хозяйства </button>
+                                           <li>Отходы растениеводства (включая деятельность по подготовке продукции к сбыту)</li>
+                                            <li>Отходы животноводства (включая деятельность по содержанию животных)</li> 
+                                            <li>Отходы при прочих работах и услугах в сельском хозяйстве</li>
+                                     </ul>
+                                 </li>
+                                 <li>Отходы при лесоводстве и лесозаготовках  </li>
+                                 <li>Отходы при рыболовстве, рыбоводстве</li> 
+                                 
+                             </ul>
+
+                             <ul>
+                                Отходы потребления производственные и непроизводственные; материалы, изделия, утратившие потребительские свойства
+                             </ul>
+                             <ul>
+                                Отходы при водоснабжении, водоотведении, деятельности по сбору, обработке, утилизации, обезвреживанию, размещению отходов
+                             </ul>
+                             <ul>
+                                Отходы обеспечения электроэнергией, газом и паром
+                             </ul>
+                             <ul>
+                                Отходы добычи ископаемых
+                             </ul>
+                             <ul>
+                                Отходы обрабатывающих производств
+                             </ul>
+                             <ul>
+                                Отходы строительства и ремонта
+                             </ul>
+                             <ul>
+                                Отходы при выполнении прочих видов деятельности, не вошедшие в блоки
+                             </ul> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- aside block -->
+                <div class="col-12 col-lg-3"  >
+                    <div class="rec-aside">
+                        <div class="rec-aside_adv">
+                            <div class="rec-aside_adv__item">
+                                adv
+                            </div>
+                        </div> 
+                        <!-- <div class="rec-aside_map">map</div>  -->
+                        <div class="rec-aside_recomendation"> 
+                            <h4>Рекомендуемые компании</h4>
+                            <div class="rec-aside_recomendation__item">
+                               <a href="company.html">
+                                    <div class="rec-aside_recomendation__item-image" style="background-image: url(assets/images/recomendation.png);"></div>
+                                    <div class="rec-aside_recomendation__item-text">
+                                        <div class="title">Компания 1</div>
+                                        <div class="rating">
+                                            <span>Рейтинг:</span>
+                                            <i></i>
+                                            <i></i>
+                                        </div>
+                                        <div class="city">Казань</div>
+                                    </div>
+                               </a>
+                            </div> 
+                            <div class="rec-aside_recomendation__item">
+                               <a href="company.html">
+                                    <div class="rec-aside_recomendation__item-image" style="background-image: url(assets/images/recomendation.png);"></div>
+                                    <div class="rec-aside_recomendation__item-text">
+                                        <div class="title">Компания 2</div>
+                                        <div class="rating">
+                                            <span>Рейтинг:</span>
+                                            <i></i>
+                                            <i></i>
+                                            <i></i>
+                                        </div>
+                                        <div class="city">Москва</div>
+                                    </div>
+                               </a>
+                            </div> 
+                            <div class="rec-aside_recomendation__item">
+                               <a href="company.html">
+                                    <div class="rec-aside_recomendation__item-image" style="background-image: url(assets/images/recomendation.png);"></div>
+                                    <div class="rec-aside_recomendation__item-text">
+                                        <div class="title">Компания 3</div>
+                                        <div class="rating">
+                                            <span>Рейтинг:</span>
+                                            <i></i>
+                                            <i></i>
+                                            <i></i>
+                                            <i></i>
+                                        </div>
+                                        <div class="city">Ростов-на-Дону</div>
+                                    </div>
+                               </a>
+                            </div> 
+                        </div>
+                        <div class="rec-aside_services">
+                            <h4>Наши сервисы:</h4>
+                            <div class="rec-aside_services__item">
+                                <div class="rec-aside_services__item-image" style="background-image: url(assets/images/service1.png);"></div>
+                                <div class="rec-aside_services__item-text">
+                                    <div class="title">Логистика отходов</div>
+                                    <div class="description">Помогаем доставить ваши отходы или отходы для вас</div>
+                                </div>
+                            </div>
+                            <div class="rec-aside_services__item">
+                                <div class="rec-aside_services__item-image" style="background-image: url(assets/images/service2.png);"></div>
+                                <div class="rec-aside_services__item-text">
+                                    <div class="title">Проверка контрагентов</div>
+                                    <div class="description">Изучаем всех участников платформы для верификации</div>
+                                </div>
+                            </div>
+                            <div class="rec-aside_services__item">
+                                <div class="rec-aside_services__item-image" style="background-image: url(assets/images/service3.png);"></div>
+                                <div class="rec-aside_services__item-text">
+                                    <div class="title">Гарантий поставки</div>
+                                    <div class="description">Мы контролируем процесс поставки продуктов платформы</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main end -->
+   
+
+    <!-- footer start -->
+    <footer>
+        <div class="rec-footer">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="rec-footer_content">
+                        <span>Коммерческая информация и информация о разработчиках</span> 
+                    </div> 
+                </div>
+            </div>
+        </div> 
+    </footer>
+    <!-- footer end -->
+   
+     
+   
+ 
+    <script src="assets/js/vendor.min.js"></script>  
+    <script src="assets/js/script.min.js"></script> 
+  
+    
+
+   
+</body>
+</html>

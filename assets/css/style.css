@@ -103,6 +103,24 @@ body {
     -webkit-transform: rotate(120deg);
             transform: rotate(120deg); } }
 
+button:focus {
+  outline: none !important; }
+
+button:active {
+  outline: none; }
+
+input:focus {
+  outline: none; }
+
+select:focus {
+  outline: none; }
+
+textarea:focus {
+  outline: none; }
+
+.selectr-selected:focus {
+  outline: none; }
+
 header button {
   cursor: pointer; }
 
@@ -147,11 +165,25 @@ header .rec-header {
               box-shadow: none;
       outline: none;
       padding: 0; }
+      header .rec-header_nav .open-btn:hover span:nth-child(1) {
+        -webkit-transform: translateY(2px);
+            -ms-transform: translateY(2px);
+                transform: translateY(2px); }
+      header .rec-header_nav .open-btn:hover span:nth-child(3) {
+        -webkit-transition: 500ms ease;
+        -o-transition: 500ms ease;
+        transition: 500ms ease;
+        -webkit-transform: translateY(-2px);
+            -ms-transform: translateY(-2px);
+                transform: translateY(-2px); }
       header .rec-header_nav .open-btn span {
-        width: 80%;
+        width: 25px;
         height: 1px;
         background: #838383;
-        margin-top: 5px; }
+        margin-top: 5px;
+        -webkit-transition: 300ms ease;
+        -o-transition: 300ms ease;
+        transition: 300ms ease; }
         header .rec-header_nav .open-btn span:first-child {
           margin-top: 0; }
     header .rec-header_nav__logo {
